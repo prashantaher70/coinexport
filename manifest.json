@@ -1,15 +1,27 @@
 {
     "name": "Coin Exporter",
-    "description": "Download Zerodha Coin Mutual Fund Allotments",
+    "description": "Download Zerodha Coin Mutual Fund Holdings Statement as a CSV/XLS or JSON file",
     "version": "1.0.0",
     "manifest_version": 3,
     "action": {
-        "default_popup": "popup.html"
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/assets/ic_launcher_16.png",
+            "32": "/assets/ic_launcher_32.png",
+            "48": "/assets/ic_launcher_48.png",
+            "128": "/assets/ic_launcher_128.png"
+        }
     },
     "content_scripts": [
         {
             "matches": ["https://coin.zerodha.com/dashboard"],
             "js": ["content.js"]
         }
-    ]
+    ],
+    "icons": {
+        "16": "/assets/ic_launcher_16.png",
+        "32": "/assets/ic_launcher_32.png",
+        "48": "/assets/ic_launcher_48.png",
+        "128": "/assets/ic_launcher_128.png"
+    }
 }
