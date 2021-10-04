@@ -1,0 +1,15 @@
+{
+    "name": "Coin Exporter",
+    "description": "Download Zerodha Coin Mutual Fund Allotments",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://coin.zerodha.com/dashboard"],
+            "js": ["content.js"]
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+body {
+    font-family: RobotoMono-Bold;
+    margin: 0;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.content {
+    min-height: 200px;
+    width: 400px;
+    background-color: white;
+    padding-bottom: 32px;
+}
+
+#coin-logo {
+    width: 32px;
+    height: 32px
+}
+
+.header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.button, .tick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.button {
+    width: 160px;
+    height: 32px;
+    background: dodgerblue;
+    border-radius: 6px;
+    transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+}
+
+.button:hover {
+    cursor: pointer;
+}
+  
+.tick {
+    color: white;
+}
